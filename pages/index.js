@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {Code, Heading, Link, Text} from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,14 +11,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Heading as="h1" size="2xl" mb="2">
+          Welcome to <Link color="teal.500" href="https://nextjs.org">Next.js!</Link>
+        </Heading>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <Text fontSize="xl" mt="2">
+          Get started by editing <Code>pages/index.js</Code>
+        </Text>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
